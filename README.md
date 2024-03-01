@@ -1,4 +1,4 @@
-# Jerseys Store 
+# SportsJerseyKingdom 
 Uma API de controle de uma loja online de camisas esportivas
 
 
