@@ -28,10 +28,11 @@ Retornar um array com todas as camisas cadastradas na loja.
 [
     {
         "id": 1,
-        "nome": "Manchester United Home 23/24"
-        "marca": "Nike"
+        "nome": "Manchester United Home 23/24",
+        "marca": "Nike",
         "tamanho": "G",
-        "preco": 50
+        "preco": 50,
+        "foto": "Arquivo/Imagens/Girona_Home_23/24"
     }
 ]
 ```
@@ -53,10 +54,10 @@ Retornar os dados da camisa com o `id` informado.
 ```js
 {
     "id": 1,
-    "nome": "Girona Home 23/24"
-    "marca": "Nike"
+    "nome": "Girona Home 23/24",
+    "marca": "Nike",
     "tamanho": "G",
-    "preco": 50
+    "preco": 50,
     "foto": "Arquivo/Imagens/Girona_Home_23/24"
 }
 ```
@@ -87,10 +88,10 @@ Insere uma nova Camisa
 
 ```js
 {
-    "nome": "Girona Home 23/24"
-    "marca": "Nike"
+    "nome": "Girona Home 23/24",
+    "marca": "Nike",
     "tamanho": "G",
-    "preco": 50
+    "preco": 50,
     "foto": "Arquivo/Imagens/Girona_Home_23/24"
 }
 ```
@@ -99,10 +100,10 @@ Insere uma nova Camisa
 ```js
 {
     "id": 1,
-    "nome": "Girona Home 23/24"
-    "marca": "Nike"
+    "nome": "Girona Home 23/24",
+    "marca": "Nike",
     "tamanho": "G",
-    "preco": 50
+    "preco": 50,
     "foto": "Arquivo/Imagens/Girona_Home_23/24"
 }
 ```
@@ -146,10 +147,10 @@ Atualizar os dados do `id` indicado
 
 ```js
 {
-    "nome": "Girona Home 23/24"
-    "marca": "Nike"
+    "nome": "Girona Home 23/24",
+    "marca": "Nike",
     "tamanho": "G",
-    "preco": 50
+    "preco": 50,
     "foto": "Arquivo/Imagens/Girona_Home_23/24"
 }
 ```
@@ -159,10 +160,10 @@ Atualizar os dados do `id` indicado
 ```js
 {
     "id": 1,
-    "nome": "Girona Home 23/24"
-    "marca": "Nike"
+    "nome": "Girona Home 23/24",
+    "marca": "Nike",
     "tamanho": "G",
-    "preco": 50
+    "preco": 50,
     "foto": "Arquivo/Imagens/Girona_Home_23/24"
 }
 ```
@@ -189,11 +190,11 @@ Retorna um array com todas as vendas feitas
 [
     {
     "id": 1,
-    "código de rastreio": 239932 
+    "código de rastreio": 239932 ,
     "nome cliente": "Arthur Koga",
-    "produto": "Girona home 23/24"
-    "endereço": "Av.Paulista 1203"
-    "Valor": 79.50
+    "produto": "Girona home 23/24",
+    "endereço": "Av.Paulista 1203",
+    "Valor": 79.50,
     "Enviado": false
     }
 ]
@@ -215,11 +216,11 @@ Retornar os dados da venda com o `id` informado
 ```js
 {
     "id": 1,
-    "código de rastreio": 239932 
+    "código de rastreio": 239932 ,
     "nome cliente": "Arthur Koga",
-    "produto": "Girona home 23/24"
-    "endereço": "Av.Paulista 1203"
-    "Valor": 79.50
+    "produto": "Girona home 23/24",
+    "endereço": "Av.Paulista 1203",
+    "Valor": 79.50,
     "Enviado": false
 }
 ```
@@ -251,8 +252,8 @@ Insere uma nova venda.
 ```js
  {
     "nome cliente": "Arthur Koga",
-    "produto": "Girona home 23/24"
-    "endereço": "Av.Paulista 1203"
+    "produto": "Girona home 23/24",
+    "endereço": "Av.Paulista 1203",
     "Valor": 79.50
 }
 ``` 
@@ -262,11 +263,11 @@ Insere uma nova venda.
 ```js
 {
     "id": 1,
-    "código de rastreio": 239932 
+    "código de rastreio": 239932 ,
     "nome cliente": "Arthur Koga",
-    "produto": "Girona home 23/24"
-    "endereço": "Av.Paulista 1203"
-    "Valor": 79.50
+    "produto": "Girona home 23/24",
+    "endereço": "Av.Paulista 1203",
+    "Valor": 79.50,
     "Enviado": false
 }
 ```
@@ -296,7 +297,7 @@ Atualizar os dados do `id` indicado
 ```js
 {
     "nome": "alimentação",
-    "endereço": "Av.Paulista 1203"
+    "endereço": "Av.Paulista 1203",
     "Enviado": false
 }
 ```
@@ -305,11 +306,11 @@ Atualizar os dados do `id` indicado
 ```js
 {
     "id": 1,
-    "código de rastreio": 239932 
+    "código de rastreio": 239932 ,
     "nome cliente": "Arthur Koga",
-    "produto": "Girona home 23/24"
-    "endereço": "Av.Paulista 1203"
-    "Valor": 79.50
+    "produto": "Girona home 23/24",
+    "endereço": "Av.Paulista 1203",
+    "Valor": 79.50,
     "Enviado": true
 }
 ```
