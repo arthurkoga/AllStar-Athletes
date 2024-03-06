@@ -55,7 +55,7 @@
                 }
                     return ResponseEntity.ok(camisa.get());
         }
-
+        @DeleteMapping("{id}")
         public ResponseEntity<Camisa> destroy(@PathVariable long id){
             log.info("Apagando acamisa" + id);
             var camisa = repository
