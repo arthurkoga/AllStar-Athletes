@@ -251,10 +251,10 @@ Insere uma nova venda.
 
 ```js
  {
-    "nome cliente": "Arthur Koga",
+    "nomeCliente": "Arthur Koga",
     "produto": "Girona home 23/24",
-    "endereço": "Av.Paulista 1203",
-    "Valor": 79.50
+    "endereco": "Av.Paulista 1203",
+    "valor": 79.50
 }
 ``` 
 

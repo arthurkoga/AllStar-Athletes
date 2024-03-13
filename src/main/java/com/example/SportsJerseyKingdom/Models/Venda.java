@@ -1,8 +1,8 @@
 package com.example.SportsJerseyKingdom.Models;
 
-import java.util.Random;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import lombok.Data;
 import jakarta.persistence.Id;
 
@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 public class Venda{
     
         //o abs pega só o numero absoluto ignorando o sinal
-        @Id
+        @Id @GeneratedValue(strategy = GenerationType.AUTO)
         private long id; //esses comportamento do id é o que difere do record
         private String codeRastreio;
         private String nomeCliente ;
