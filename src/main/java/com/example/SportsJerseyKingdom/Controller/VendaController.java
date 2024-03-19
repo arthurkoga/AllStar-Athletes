@@ -4,6 +4,7 @@ import com.example.SportsJerseyKingdom.Models.Venda;
 import com.example.SportsJerseyKingdom.Repository.VendaRepository;
 
 import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
@@ -73,14 +74,11 @@ public class VendaController {
 
     //DELETE
     @DeleteMapping("{id}")
-    @ResponseStatus()
-    public ResponseEntity<Object> destroy(@PathVariable Long id){
+    @ResponseStatus(NO_CONTENT)
+    public void destroy(@PathVariable Long id){
         log.info("apagando venda com id: {}", id);
-        
         verificaSeExisteVenda(id); // Verificação
-
         repository.deleteById(id);
-        return ResponseEntity.noContent().build();
     }
 
     //Métodos de Verificação

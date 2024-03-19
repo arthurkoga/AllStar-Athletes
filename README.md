@@ -31,7 +31,7 @@ Retornar um array com todas as camisas cadastradas na loja.
         "nome": "Manchester United Home 23/24",
         "marca": "Nike",
         "tamanho": "G",
-        "preco": 50,
+        "preco": 10.50,
         "foto": "Arquivo/Imagens/Girona_Home_23/24"
     }
 ]

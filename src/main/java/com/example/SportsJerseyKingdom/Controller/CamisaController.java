@@ -3,6 +3,7 @@ import com.example.SportsJerseyKingdom.Models.Camisa;
 import com.example.SportsJerseyKingdom.Repository.CamisaRepository;
 
 import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
@@ -58,14 +59,11 @@ public class CamisaController {
 
     //DELETE
     @DeleteMapping("{id}")
-    @ResponseStatus()
-    public ResponseEntity<Object> destroy(@PathVariable Long id){
+    @ResponseStatus(NO_CONTENT)
+    public void destroy(@PathVariable Long id){
         log.info("apagando camisa com id: {}", id);
-        
         verificaSeExisteCamisa(id); // Verificação
-
         repository.deleteById(id);
-        return ResponseEntity.noContent().build();
     }
 
     //PUT
