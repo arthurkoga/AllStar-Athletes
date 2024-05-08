@@ -7,12 +7,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Data;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
-
 @Data
 @Entity
+
 public class Venda{
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
         private long id; 
@@ -35,5 +36,7 @@ public class Venda{
         private BigDecimal valor;
         
         private boolean enviado;
-}
 
+        @ManyToOne
+        private Camisa camisa;
+}
