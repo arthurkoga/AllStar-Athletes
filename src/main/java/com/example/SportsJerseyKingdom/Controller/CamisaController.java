@@ -2,6 +2,10 @@ package com.example.SportsJerseyKingdom.Controller;
 import com.example.SportsJerseyKingdom.Models.Camisa;
 import com.example.SportsJerseyKingdom.Repository.CamisaRepository;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
@@ -48,6 +52,12 @@ public class CamisaController {
         log.info("cadastrando camisa: {}", camisa);
         return repository.save(camisa);
     }
+
+    @Operation(description = "Busca a camisa pelo id ")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "retorna a camisa"),
+        @ApiResponse(responseCode = "400", description = "Não existe a camisa com esse id")
+    })
 
     //GET 
     @GetMapping("/{id}")

@@ -25,6 +25,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.bind.annotation.PutMapping;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 @RestController
 @RequestMapping("/venda")
 @Slf4j
@@ -46,6 +50,9 @@ public class VendaController {
         log.info("cadastrando venda: {}", venda);
         return repository.save(venda);
     }
+
+    
+
 
     //GET 
     @GetMapping("/{id}")
